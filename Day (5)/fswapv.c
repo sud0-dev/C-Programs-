@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+int a,b;
+printf("\nEnter 2 numbers: ");
+scanf("%d%d",&a,&b);
+swap(a,b);
+//printf("\nSwapped numbers: %d and %d\n",a,b);
+}
+
+void swap(int p, int q)
+{
+p=p+q;
+q=p-q;
+p=p-q;
+printf("\nSwapped numbers: %d and %d\n",p,q);
+//return (p,q);
+}
